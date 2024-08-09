@@ -1,0 +1,33 @@
+<div #card class="card" [@fadeSlideIn]="inView ? 'in' : 'out'">
+  <p class="repohead">Repository</p>
+  <h2>{{ repo.name }}</h2>
+  <div class="readmeContent">
+    <pre [ngClass]="{ content: true, expanded: isExpanded, collapsed: !isExpanded }">
+      {{ getDisplayedContent() }}
+    </pre>
+    <button (click)="toggleExpand()" class="toggleButton">
+      <ng-container *ngIf="isExpanded; else collapsedIcon">
+        &#9650; <!-- Up arrow icon -->
+      </ng-container>
+      <ng-template #collapsedIcon>
+        &#9660; <!-- Down arrow icon -->
+      </ng-template>
+    </button>
+  </div>
+  <hr class="hr" />
+  <div class="repoDetails">
+    <div class="icons">
+      <p>⭐{{ repo.stargazers_count }}</p>
+      <p>🍴{{ repo.forks_count }}</p>
+      <p>👀{{ repo.watchers_count }}</p>
+      <p *ngIf="repo.language" class="tec">🔧{{ repo.language }}</p>
+    </div>
+    <div class="footer">
+      <div class="author">
+        <img [src]="repo.owner.avatar_url" alt="Owner avatar" class="avatar" />
+        <p>🔄{{ repo.updated_at | date }}</p>
+      </div>
+      <a [href]="repo.html_url" class="link"><mat-icon class="aroowfow">arrow_forward</mat-icon></a>
+    </div>
+  </div>
+</div>

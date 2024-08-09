@@ -1,0 +1,29 @@
+<section id="projects" class="container" [@fadeSlideIn]="inView ? 'in' : 'out'">
+  <h1 class="sectionTitle">Blogs</h1>
+  <div class="projectContainer">
+    <app-blog-card
+      [src]="springJpa"
+      [link]="'https://radiocatwrites.hashnode.dev/what-is-infinite-recursive-loop-in-spring-boot-everything-you-need-to-know'"
+      [h3]="'Spring Boot'"
+      [p]="'What is infinite recursion problem in Spring data JPA?'">
+    </app-blog-card>
+    <app-blog-card
+      [src]="springBoot"
+      [link]="'https://radiocatwrites.hashnode.dev/spring-boot-dependency-injection-through-the-lens-of-solid-principles'"
+      [h3]="'Spring'"
+      [p]="'Dependency injection explained with SOLID principles'">
+    </app-blog-card>
+    <app-blog-card
+      [src]="springRe"
+      [link]="'https://radiocatwrites.hashnode.dev/spring-boot-dependency-injection-through-the-lens-of-solid-principles'"
+      [h3]="'Spring Reactive'"
+      [p]="'What is Spring WebFlux. Everything you need to know !'">
+    </app-blog-card>
+    <app-blog-card
+      [src]="springRe"
+      [link]="'https://radiocatwrites.hashnode.dev/spring-boot-dependency-injection-through-the-lens-of-solid-principles'"
+      [h3]="'Spring Reactive'"
+      [p]="'What is Next blog topic and About the blog'">
+    </app-blog-card>
+  </div>
+</section>

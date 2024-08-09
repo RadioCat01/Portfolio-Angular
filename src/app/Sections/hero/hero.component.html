@@ -1,0 +1,23 @@
+<section id="hero" class="container" [ngClass]="{'light': theme === 'light', 'dark': theme === 'dark'}">
+  <div [@slideIn] class="colorModeContainer">
+    <img src="heroPic.jpg" alt="Profile Picture" class="hero"/>
+    <img (click)="toggleTheme()" [src]="theme === 'light' ? 'sun.svg' : 'moon.svg'" alt="Light-Dark" class="colorMode"/>
+  </div>
+  <div [@slideInRight] class="info">
+    <h1 class="im">I'm</h1>
+   <div class="name"> <h1>Pawan</h1><h1>Hettiarachchi</h1> </div>
+    <h2>{{ text }}</h2>
+    <span>
+      <a href="https://x.com/Pawan38257022" target="_blank">
+        <img [src]="theme === 'light' ? 'twitter-light.svg' : 'twitter-dark.svg'" alt="Twitter icon"/>
+      </a>
+      <a href="https://github.com/RadioCat01" target="_blank">
+        <img [src]="theme === 'light' ? 'github-light.svg' : 'github-dark.svg'" alt="Github icon"/>
+      </a>
+      <a href="https://www.linkedin.com/in/pawan-kanishka-86b438249/" target="_blank">
+        <img [src]="theme === 'light' ? 'linkedin-light.svg' : 'linkedin-dark.svg'" alt="LinkedIn icon"/>
+      </a>
+    </span>
+    <a href="#AboutMe" class="HashLink">About Me</a>
+  </div>
+</section>

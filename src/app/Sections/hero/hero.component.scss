@@ -1,0 +1,151 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+    .hero{
+        max-width: 240px;
+        border-radius: 120px;
+    }
+    .name{
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        gap: -20px;
+    }
+
+    .im{
+        font-size: 30px;
+        color: rgb(128, 151, 237);
+    }
+    h1{
+        font-family: 'Rubik';
+        font-size: 34px;
+        font-weight: 600;
+        margin: -10px;
+    }
+
+    span{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        margin:-10px;
+        font-size: 20px;
+        color: var(--text-color);
+        font-family:'Roboto Mono';
+        font-weight: 700;
+    }
+
+    a{
+        margin: 0;
+        img{
+            width: 40px;
+        }
+    }
+
+    a{
+        width: fit-content;
+        align-self: center;
+    }
+    .HashLink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var( --btn-color);
+        color: var(--btn-text-color);
+        border-radius: 20px;
+        width: 134px;
+        height: 45px;
+        font-size: 18px;
+        font-family: 'Rubik';
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 4px 4px rgba(100, 98, 98, 0.25);
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    }
+
+    .HashLink:hover{
+        transform: scale(1.05);
+    }
+    .HashLink:active{
+        transform: translateY(2px);
+        box-shadow: 0 2px 2px rgba(0,0,0,0.25);
+    }
+
+    
+.colorMode{
+  position: absolute;
+  width: 25px;
+  top: 10px;
+  right: -24px;
+}
+
+}
+
+.colorMode:hover{
+    cursor:pointer;
+}
+.description{
+    max-width: 24ch;
+    margin-left: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.typeWriterh2{
+    height: 30px;
+}
+
+@media(width >= 800px){
+    .container{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 95dvh;
+
+
+        .hero{
+            max-width: 400px;
+            width: 400px;
+            border-radius: 200px;
+        }
+        .im{
+            font-size: 30px;
+            margin-bottom: -20px;
+            color: rgb(36, 251, 101);
+        }
+    } 
+}
+
+@media(width >= 1400px){
+   .container{
+   
+    .hero{
+        max-width: 400px;
+        width: 400px;
+        border-radius: 200px;
+    }
+}
+.description{
+    max-width: 24ch;
+    margin-left: 40px;
+}
+
+.colorMode{
+    position: absolute;
+    right: -240px;
+    top: -200px;
+    width: 25px;
+}
+}

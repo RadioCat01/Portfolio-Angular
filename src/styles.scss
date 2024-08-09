@@ -1,1 +1,105 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --background-color: #fff;
+    --btn-color: #0987f2;
+    --btn-text-color: #fff;
+    --project-card-bg: #ffffff00;
+    --text-color: #222;
+    --form-text-color: #555;
+    --footer-text-color: #888;
+    --project-card:rgb(255, 255, 255, 0.8);
+    --project-card-text:#222;
+}
+
+.dark{
+    --background-color: #222;
+    --btn-color: #fff;
+    --btn-text-color: #222;
+    --project-card-bg: #fff;
+    --text-color: #fff;
+    --form-text-color: #fff;
+    --footer-text-color: #bbb;
+    --project-card:rgb(53, 53, 55, 0.8);
+}
+
+body{
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+    background-image: url('/UpBgcopy.png');
+    background-position: -2175px 0px;
+    background-size: 4800px 6000px;
+    overflow-x: hidden;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+h1,h2,h3,p,pre{
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2,h3,p,pre{
+    font-family: 'Roboto Mono';
+}
+
+h1,h2{
+    text-transform: uppercase;
+}
+h2,h3{
+    font-size: 20px;
+}
+h1{
+    font-family: 'Rubik';
+    font-size: 20px;
+}
+p,pre{
+    font-size: 14px;
+    font-weight: 600;
+}
+.sectionTitle{
+    margin-bottom: 30px;
+}
+.hover{
+    cursor: pointer;
+}
+
+
+@media(width >= 800px){
+    #root{
+        gap: 100px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2,h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .sectionTitle{
+        margin-bottom: 60px;
+    }
+}
+
+
+@media(width >= 1400px){
+    #root{
+        gap: 200px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .sectionTitle{
+        margin-bottom: 75px;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

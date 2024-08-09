@@ -1,0 +1,11 @@
+<section id="projects" class="container">
+  <h1 [@fadeSlideIn]="inView ? 'in' : 'out'">
+    Projects
+  </h1>
+ <!-- <button (click)="refreshData()" class="refreshButton">Refresh Data</button> -->
+  <ul class="repoList">
+    <li *ngFor="let repo of repos" class="repo-item">
+      <app-project-card [repo]="repo"></app-project-card>
+    </li>
+  </ul>
+</section>

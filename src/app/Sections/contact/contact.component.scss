@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+    .sectiontitle{
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+textarea, input:not([type="Submit"]){
+    height: 50px;
+    padding-left: 16px;
+    width: 250px;
+}
+
+textarea{
+    padding-top: 16px;
+    resize: none;
+    height: 250px;
+}
+
+input,textarea{
+    border-radius: 20px;
+    border: #888 1px solid;
+    box-sizing: border-box;
+    justify-self: center;
+    background-color: var(--background-color);
+    color: var(--form-text-color);
+}
+
+::placeholder{
+    color: var(--form-text-color);
+}
+
+.submit-btn {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border-radius: 120px;
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(100, 98, 98, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    margin: auto;
+    border: none; /* Ensure no border is applied */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(100, 98, 98, 0.25);
+  }
+  
+
+
+@media(width >= 800px){
+    .container{
+        overflow: hidden;
+        .sectiontitle{
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+
+    }
+    
+    textarea,input:not([type='submit']){
+       width: 400px;
+       font-size: 16px;
+    }
+    form{
+        gap: 40px;
+    }
+}

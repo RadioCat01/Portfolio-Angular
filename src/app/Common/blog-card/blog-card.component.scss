@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    min-width: 220px;
+    margin-bottom: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    background-color: var(--project-card);
+    height: 240px;
+    padding: 20px;
+    padding-top: 30px;
+    text-decoration: none; // Ensures link styling is consistent
+  
+    .hr {
+      height: 1px;
+      margin-top: -6px;
+      margin-bottom: 10px;
+      width: 80px;
+    }
+  
+    .topic {
+      color: var(--btn-color);
+      font-family: 'Roboto Mono', monospace; // Ensure fallback font is included
+      font-weight: 800;
+    }
+  }
+  
+  .img {
+    width: 160px;
+    height: 100px;
+    object-fit: contain;
+    max-height: 200px; 
+    padding: 25px 0;
+  }
+  
+  .p {
+    max-width: 20ch;
+    font-family: 'Rubik', sans-serif; // Ensure fallback font is included
+    font-weight: 500;
+    text-align: center; // Center text for better alignment
+  }
+  
+  // Corrected media query syntax
+  @media (min-width: 800px) {
+    .container {
+      .p {
+        font-size: 16px;
+      }
+  
+      .topic {
+        font-size: 14px;
+      }
+    }
+  }
+  

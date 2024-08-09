@@ -1,0 +1,27 @@
+<section id="AboutMe" class="container">
+  <h1 [@fadeSlideIn]="h1InView ? 'in' : 'out'" class="sectionTitle">About Me</h1>
+  <div class="info">
+    <img 
+      [@fadeSlideInX]="imgInView ? 'in' : 'out'" 
+      src="{{ aboutpic }}" 
+      class="img" 
+      style="will-change: transform, opacity;" 
+      loading="lazy"
+      alt="About Me Picture"
+    />
+    <div class="PandRes">
+      <p [@fadeSlideInXReverse]="pInView ? 'in' : 'out'">
+        An aspiring web developer and software engineer from Sabaragamuwa University of Sri Lanka.
+        Passionate about creating impactful digital solutions, I thrive on innovation and collaboration.
+        I am eager to bring my skills and creativity to the tech industry.
+      </p>
+      <div class="cont" style="will-change: transform, opacity;">
+        <a [href]="CV" download>
+          <button class="resume">Resume</button>
+        </a>
+        <a [routerLink]="'#contact'" class="hireme">Hire Me</a>
+      </div>
+    </div>
+  </div>
+  <app-skills></app-skills>
+</section>
