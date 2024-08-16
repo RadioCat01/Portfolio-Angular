@@ -1,7 +1,7 @@
 .card {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 15px;
-    width: 270px;
+    padding: 20px;
+    width: 290px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -13,16 +13,18 @@
     font-size: 12px;
   }
   
-  .card h2 {
-    margin-top: 10px;
-    margin-bottom: 2px;
+  h2 {
+    margin-bottom: -20px;
     font-family: 'Rubik';
     font-size: 18px;
     min-width: 270px;
+    font-weight: 600;
+    margin-top: -20px;
   }
   
   .readmeContent {
-    overflow: hidden; /* Ensure the content doesn't overflow the container */
+    overflow: hidden;
+    min-height: 100px;
   }
   
   .toggleButton {
@@ -35,15 +37,19 @@
     border-radius: 5px;
     height: 16px;
   }
+.collapsed{
+  max-width: 60ch;
+}
   
   .readmeContent p {
     font-size: 10px;
     margin-top: 10px;
+    width: 260px;
   }
   
   .readmeContent pre {
-    font-size: 11px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-family: 'Rubik';
     font-weight: 200;
     padding-bottom: 10px;
     min-height: 30px;
@@ -54,7 +60,9 @@
   }
   
   .repoDetails {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
   
   .repoDetails p {
@@ -62,19 +70,19 @@
   }
   
   .icons {
-    width: 250px;
+    width: 270px;
     margin-top: 8px;
+    margin-bottom: -4px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 10px;
-    column-gap: 20px;
   }
   
   .hr {
     opacity: 0.2;
-    margin-top: 10px;
-    margin-bottom: -30px;
+    margin-top: -4px;
+    margin-bottom: -20px;
     width: 220px;
     height: 1px;
     color: var(--form-text-color);
@@ -89,20 +97,20 @@
   }
   
   .author {
-    
-    margin: 14px;
-    width: 160px;
+    width: 180px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
   
   .author p {
     margin-left: 10px;
+    margin-top: 10px;
   }
   
   .avatar {
-    width: 42px;
+    width: 38px;
     border-radius: 100%;
   }
   

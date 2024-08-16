@@ -111,10 +111,11 @@
     .container{
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-evenly;
-        min-height: 95dvh;
-
-
+        justify-content: space-between;
+        min-height: 100vh;
+        gap: 30%;
+        width: 100%;
+        padding: 0 100px 0 100px;
         .hero{
             max-width: 400px;
             width: 400px;

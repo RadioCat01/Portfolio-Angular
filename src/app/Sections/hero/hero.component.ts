@@ -71,5 +71,12 @@ export class HeroComponent {
     document.body.classList.toggle('dark', this.theme === 'dark');
     document.body.classList.toggle('light', this.theme === 'light');
   }
+
+  scroll(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
  
 }

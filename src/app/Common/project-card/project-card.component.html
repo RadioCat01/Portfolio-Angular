@@ -7,10 +7,10 @@
     </pre>
     <button (click)="toggleExpand()" class="toggleButton">
       <ng-container *ngIf="isExpanded; else collapsedIcon">
-        &#9650; <!-- Up arrow icon -->
+        &#9650;
       </ng-container>
       <ng-template #collapsedIcon>
-        &#9660; <!-- Down arrow icon -->
+        &#9660;
       </ng-template>
     </button>
   </div>

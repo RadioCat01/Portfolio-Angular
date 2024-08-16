@@ -38,7 +38,7 @@ export class ProjectCardComponent {
     if (this.isExpanded) {
       return words.slice(0, 50).join(' ') + (words.length > 50 ? '...' : '');
     }
-    return words.slice(0, 6).join(' ') + (words.length > 20 ? '...' : '');
+    return words.slice(0, 4).join(' ') + (words.length > 20 ? '...' : '');
   }
 
   @HostListener('window:scroll', ['$event'])

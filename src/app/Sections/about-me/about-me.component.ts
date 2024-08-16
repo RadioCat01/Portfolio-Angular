@@ -80,6 +80,13 @@ export class AboutMeComponent {
   }
 
   aboutpic = 'aboutmePic.jpg';
-  CV = 'path/to/your/CV.pdf'; 
+  CV = 'Sample-CV.pdf'; 
+
+  scroll(id:string): void{
+    const pageid = document.getElementById(id);
+    if (pageid) {
+      pageid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
 }
