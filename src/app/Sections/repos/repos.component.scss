@@ -25,6 +25,7 @@
   padding: 0;
   margin: 0;
   gap: 10px;
+  justify-content: center;
 }
 
 
@@ -36,9 +37,13 @@
       font-size: 40px;
     }
   }
-  .repoList{
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-between;
-  } 
+  .repoList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
 }
