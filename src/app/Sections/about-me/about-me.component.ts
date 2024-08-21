@@ -80,7 +80,7 @@ export class AboutMeComponent {
   }
 
   aboutpic = 'aboutmePic.jpg';
-  CV = 'Sample-CV.pdf'; 
+  CV = 'Resume-Pawan Hettiarachchi.pdf'; 
 
   scroll(id:string): void{
     const pageid = document.getElementById(id);
